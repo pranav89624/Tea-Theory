@@ -117,7 +117,7 @@ body {
                     @apply 2xl:text-start text-center;
                 }
 
-                .view-cocktails {
+                .view-teas {
                     @apply space-y-5 text-lg lg:max-w-2xs md:max-w-xs w-full;
 
                     p {
