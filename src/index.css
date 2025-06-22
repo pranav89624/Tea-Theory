@@ -136,14 +136,14 @@ body {
         @apply w-full md:h-[80%] h-1/2 absolute bottom-0 left-0 md:object-contain object-bottom object-cover;
     }
 
-    #cocktails {
+    #tea {
         @apply relative min-h-dvh w-full overflow-hidden;
 
-        #c-left-leaf {
+        #t-left-leaf {
             @apply absolute left-0 md:bottom-0 md:top-auto -top-20 md:w-fit w-1/3;
         }
 
-        #c-right-leaf {
+        #t-right-leaf {
             @apply absolute right-0 md:bottom-0 md:top-auto -top-20 md:w-fit w-1/3;
         }
 
