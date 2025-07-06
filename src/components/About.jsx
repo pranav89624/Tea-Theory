@@ -1,6 +1,30 @@
-import React from "react";
+import gsap from "gsap";
+import { SplitText } from "gsap/all";
+import { useGSAP } from "@gsap/react";
 
 const About = () => {
+  useGSAP(() => {
+    const titleSplit = SplitText.create("#about h2",{
+      type:"words"
+    })
+
+    const scrollTimeline = gsap.timeline({
+      scrollTrigger: {
+        trigger: "#about",
+        start: "top center",
+      }
+    })
+
+    scrollTimeline
+    .from(titleSplit.words, {
+      opacity: 0,
+      yPercent: 100,
+      duration: 1,
+      ease: "expo.out",
+      stagger: 0.02,
+    })
+    .from(".top-grid div, .bottom-grid div", { opacity: 0, duration: 1, ease: "power1.inOut", stagger: 0.04 }, "-=0.5")
+  },[]);
   return (
     <>
       <div id="about">
@@ -30,6 +54,30 @@ const About = () => {
                 </p>
               </div>
             </div>
+          </div>
+        </div>
+
+        <div className="top-grid">
+          <div className="md:col-span-3">
+            <div className="noisy"/>
+          </div>
+
+          <div className="md:col-span-6">
+            <div className="noisy"/>
+          </div>
+
+          <div className="md:col-span-3">
+            <div className="noisy"/>
+          </div>
+        </div>
+
+        <div className="bottom-grid">
+          <div className="md:col-span-8">
+            <div className="noisy"/>
+          </div>
+
+          <div className="md:col-span-4">
+            <div className="noisy"/>
           </div>
         </div>
       </div>
