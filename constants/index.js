@@ -71,8 +71,24 @@ const mostLovedTeasLists = [
  },
 ];
 
+const goodLists = [
+ "Temperature perfect brews",
+ "Signature techniques",
+ "Handpicked leaves, ethically sourced",
+ "Freshly bloomed botanicals",
+];
+
+const featureLists = [
+	"Precisely steeped to perfection",
+	"Aged to deepen complexity",
+	"Decanted for layered tasting",
+	"Chilled to crystalline clarity"
+]
+
 export { 
 	navLinks,
 	teaLists,
-	mostLovedTeasLists
+	mostLovedTeasLists,
+	goodLists,
+	featureLists
 };
