@@ -373,6 +373,39 @@ body {
             @apply absolute bottom-0 right-0 lg:w-96 w-1/3 pointer-events-none;
         }
     }
+
+    #footer {
+        @apply relative mt-20 w-full overflow-hidden;
+        background: linear-gradient(135deg, #1a1a1a 0%, #000 100%);
+
+        .social-link {
+            @apply transition-all duration-300 ease-out;
+        }
+
+        .social-link:hover {
+            @apply shadow-lg shadow-yellow/20;
+        }
+
+        .footer-content {
+            @apply relative z-10;
+        }
+
+        h3 {
+            @apply text-white;
+        }
+
+        h4 {
+            @apply text-white;
+        }
+
+        input:focus {
+            @apply ring-2 ring-yellow/50;
+        }
+
+        button:hover {
+            @apply transform scale-105;
+        }
+    }
 }
 
 
